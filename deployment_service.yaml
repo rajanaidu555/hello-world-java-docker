@@ -16,7 +16,7 @@ spec:
       - name: durga-java-microservice-container
         image: 088585194665.dkr.ecr.ap-south-1.amazonaws.com/durga-cicd:latest
         ports:
-        - containerPort: 4567
+        - containerPort: 8080
 
 ---
 apiVersion: v1
@@ -26,7 +26,7 @@ metadata:
 spec:
   ports:
     - port: 80
-      targetPort: 4567
+      targetPort: 8080
       protocol: TCP
   type: NodePort
   selector:
