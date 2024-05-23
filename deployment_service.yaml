@@ -28,6 +28,6 @@ spec:
     - port: 80
       targetPort: 8080
       protocol: TCP
-  type: ClusterIP
+  type: Nodeport
   selector:
     app.kubernetes.io/name: java-microservice
