@@ -12,12 +12,13 @@ spec:
       labels:
         app.kubernetes.io/name: java-microservice
     spec:
+      imagePullPolicy: Always
       containers:
       - name: test-app
         image: IMAGE_URL
         ports:
         - containerPort: 8080
-      imagePullPolicy: Always
+      
 
 ---
 apiVersion: v1
