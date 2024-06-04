@@ -13,8 +13,8 @@ spec:
         app.kubernetes.io/name: java-microservice
     spec:
       containers:
-      - name: durga-java-microservice-container
-        image: 088585194665.dkr.ecr.ap-south-1.amazonaws.com/durga-cicd:latest
+      - name: test-app
+        image: IMAGE_URL
         ports:
         - containerPort: 8080
 
