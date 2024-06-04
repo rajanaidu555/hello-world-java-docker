@@ -17,6 +17,7 @@ spec:
         image: IMAGE_URL
         ports:
         - containerPort: 8080
+      imagePullPolicy: Always
 
 ---
 apiVersion: v1
