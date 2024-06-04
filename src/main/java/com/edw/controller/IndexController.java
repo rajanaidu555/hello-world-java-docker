@@ -17,7 +17,7 @@ public class IndexController {
 
         return new HashMap<>() {{
             put("success", true);
-            put("hello", "AWS-CE-PS");
+            put("hello", "AWS-CE-PS9");
             put("new-message", "adding a new msg");
         }};
     }
